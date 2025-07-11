@@ -21,6 +21,8 @@ namespace flatResponsivDesign
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
+            LblWelcome.Text += loginForm.username;
+
             loadedForm1.BringToFront();
             pnlLeft1.Height = 0;
             pnlLeft2.Height = 0;
@@ -87,9 +89,21 @@ namespace flatResponsivDesign
         {
             uC_Weekly1.BringToFront();
         }
+
         private void monthlyBtn_Click(object sender, EventArgs e)
         {
             uC_Monthly1.BringToFront();
+
+        }
+        private void BtnLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure to log out?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                loginForm loginForm = new loginForm();
+                loginForm.Show();
+                this.Close();
+            }
         }
     }
 

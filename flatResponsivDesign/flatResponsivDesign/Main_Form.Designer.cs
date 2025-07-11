@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnLogOut = new System.Windows.Forms.Button();
+            this.LblWelcome = new System.Windows.Forms.Label();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlLeft2 = new System.Windows.Forms.Panel();
             this.monthlyBtn = new System.Windows.Forms.Button();
@@ -47,15 +50,17 @@
             this.employeeBtn = new System.Windows.Forms.Button();
             this.RightPanel = new System.Windows.Forms.Panel();
             this.middlePanel = new System.Windows.Forms.Panel();
+            this.uC_Monthly1 = new flatResponsivDesign.UC_Monthly();
+            this.uC_Weekly1 = new flatResponsivDesign.UC_Weekly();
             this.loadedForm1 = new flatResponsivDesign.loadedForm();
             this.uC_PartTime1 = new flatResponsivDesign.UC_SalaryNotes();
             this.uC_FullTime1 = new flatResponsivDesign.UC_FullTime();
             this.uC_Daily1 = new flatResponsivDesign.UC_Daily();
-            this.uC_Weekly1 = new flatResponsivDesign.UC_Weekly();
-            this.uC_Monthly1 = new flatResponsivDesign.UC_Monthly();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.pnlLeft.SuspendLayout();
             this.pnlLeft2.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -120,11 +125,56 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(50)))));
+            this.panel3.Controls.Add(this.tableLayoutPanel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 619);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1073, 76);
             this.panel3.TabIndex = 2;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.BtnLogOut, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LblWelcome, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1073, 76);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // BtnLogOut
+            // 
+            this.BtnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(50)))));
+            this.BtnLogOut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnLogOut.FlatAppearance.BorderSize = 0;
+            this.BtnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogOut.Image = global::flatResponsivDesign.Properties.Resources.icons8_close_50;
+            this.BtnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnLogOut.Location = new System.Drawing.Point(3, 3);
+            this.BtnLogOut.Name = "BtnLogOut";
+            this.BtnLogOut.Size = new System.Drawing.Size(177, 70);
+            this.BtnLogOut.TabIndex = 0;
+            this.BtnLogOut.Text = "Log Out";
+            this.BtnLogOut.UseVisualStyleBackColor = false;
+            this.BtnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
+            // 
+            // LblWelcome
+            // 
+            this.LblWelcome.AutoSize = true;
+            this.LblWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblWelcome.Location = new System.Drawing.Point(186, 0);
+            this.LblWelcome.Name = "LblWelcome";
+            this.LblWelcome.Size = new System.Drawing.Size(884, 76);
+            this.LblWelcome.TabIndex = 1;
+            this.LblWelcome.Text = "Hello, ";
+            this.LblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnlLeft
             // 
@@ -301,6 +351,22 @@
             this.middlePanel.Size = new System.Drawing.Size(1073, 695);
             this.middlePanel.TabIndex = 5;
             // 
+            // uC_Monthly1
+            // 
+            this.uC_Monthly1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Monthly1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Monthly1.Name = "uC_Monthly1";
+            this.uC_Monthly1.Size = new System.Drawing.Size(1073, 695);
+            this.uC_Monthly1.TabIndex = 5;
+            // 
+            // uC_Weekly1
+            // 
+            this.uC_Weekly1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Weekly1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Weekly1.Name = "uC_Weekly1";
+            this.uC_Weekly1.Size = new System.Drawing.Size(1073, 695);
+            this.uC_Weekly1.TabIndex = 4;
+            // 
             // loadedForm1
             // 
             this.loadedForm1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -335,22 +401,6 @@
             this.uC_Daily1.Size = new System.Drawing.Size(1073, 695);
             this.uC_Daily1.TabIndex = 3;
             // 
-            // uC_Weekly1
-            // 
-            this.uC_Weekly1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Weekly1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Weekly1.Name = "uC_Weekly1";
-            this.uC_Weekly1.Size = new System.Drawing.Size(1073, 695);
-            this.uC_Weekly1.TabIndex = 4;
-            // 
-            // uC_Monthly1
-            // 
-            this.uC_Monthly1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Monthly1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Monthly1.Name = "uC_Monthly1";
-            this.uC_Monthly1.Size = new System.Drawing.Size(1073, 695);
-            this.uC_Monthly1.TabIndex = 5;
-            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -370,6 +420,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft2.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -407,5 +460,8 @@
         private UC_Daily uC_Daily1;
         private UC_Weekly uC_Weekly1;
         private UC_Monthly uC_Monthly1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button BtnLogOut;
+        private System.Windows.Forms.Label LblWelcome;
     }
 }

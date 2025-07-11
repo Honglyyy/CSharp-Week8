@@ -12,6 +12,7 @@ namespace flatResponsivDesign
 {
     public partial class loginForm : Form
     {
+        public static string username;
         public loginForm()
         {
             InitializeComponent();
@@ -19,12 +20,12 @@ namespace flatResponsivDesign
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            string username, password, confirmPassword;
+            string password, confirmPassword;
             username = usernameTxt.Text;
             password = passwordTxt.Text;
             confirmPassword = confirmPasswordTxt.Text;
 
-            if (username == "admin")
+            if (username == "Hongly")
             {
                 if (password == "123")
                 {
@@ -32,6 +33,8 @@ namespace flatResponsivDesign
                     {
                         Main_Form main_Form = new Main_Form();
                         main_Form.Show();
+
+                        this.Close();
                     }
                     else
                     {
@@ -52,6 +55,11 @@ namespace flatResponsivDesign
         private void exitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
