@@ -32,7 +32,7 @@ namespace flatResponsivDesign
         {
             listBox1.Items.Clear();
 
-            int S1=0, S5=0, S10=0, S20=0, S50 = 0, S100 = 0;
+            int S10=0, S20=0, S50 = 0, S100 = 0;
             int RR10000=0 , RR5000, RR2000 = 0 , RR1000 = 0, RR500 = 0, RR100 = 0;
             //**Solution 1**
             int R10000 = 0, R5000 = 0, R2000=0, R1000=0, R500=0, R100 = 0;
