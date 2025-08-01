@@ -29,7 +29,14 @@ namespace flatResponsivDesign
 
             empClick = false;
             reportClick = false;
-           
+           if (loginForm.roles == "Admin")
+            {
+                pnlLeft1.Height = 100;
+            }
+            else
+            {
+                panel6.Height = 0;
+            }
 
         }
 
@@ -67,34 +74,34 @@ namespace flatResponsivDesign
             }
         }
 
+        private void salaryNoteBtn_Click(object sender, EventArgs e)
+        {
+            uC_SalaryNotes1.BringToFront();
+
+        }
+
         private void fullTimeBtn_Click(object sender, EventArgs e)
         {
-            uC_FullTime1.BringToFront();
+            uC_FullTime2.BringToFront();
         }
 
-
-        private void partTimeBtn_Click(object sender, EventArgs e)
-        {
-            uC_PartTime1.BringToFront();
-        }
-
-      
         private void dailyBtn_Click(object sender, EventArgs e)
         {
-            uC_Daily1.BringToFront();
-        }
+            uC_Daily2.BringToFront();
 
+        }
 
         private void weeklyBtn_Click(object sender, EventArgs e)
         {
-            uC_Weekly1.BringToFront();
+            uC_Order1.BringToFront();
         }
 
         private void monthlyBtn_Click(object sender, EventArgs e)
         {
-            uC_Monthly1.BringToFront();
+            uC_PartTime1.BringToFront();
 
         }
+
         private void BtnLogOut_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure to log out?", "Confirm", MessageBoxButtons.YesNo);

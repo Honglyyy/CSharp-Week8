@@ -14,7 +14,7 @@ namespace flatResponsivDesign
     {
         SqlConnection connection;
         public static string publicUserName;
-        public static string username;
+        public static string username , roles;
         public loginForm()
         {
             InitializeComponent();
@@ -34,7 +34,11 @@ namespace flatResponsivDesign
             dataReader = cmd.ExecuteReader();
             if (dataReader.HasRows) 
             {
-                publicUserName = username;
+                while(dataReader.Read())
+                {
+                    publicUserName = dataReader.GetValue(1).ToString();
+                    roles = dataReader.GetValue(3).ToString();
+                }
                 MessageBox.Show("Sucessfull");
                 connection.Close();
                 Main_Form main_Form = new Main_Form();

@@ -52,6 +52,12 @@
     <Compile Include="ArrayForm.Designer.cs">
       <DependentUpon>ArrayForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailForm.Designer.cs">
+      <DependentUpon>DetailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,14 +120,17 @@
     <Compile Include="UC_SalaryNotes.Designer.cs">
       <DependentUpon>UC_SalaryNotes.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Weekly.cs">
+    <Compile Include="UC_Order.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Weekly.Designer.cs">
-      <DependentUpon>UC_Weekly.cs</DependentUpon>
+    <Compile Include="UC_Order.Designer.cs">
+      <DependentUpon>UC_Order.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ArrayForm.resx">
       <DependentUpon>ArrayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailForm.resx">
+      <DependentUpon>DetailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -163,8 +172,8 @@
     <EmbeddedResource Include="UC_SalaryNotes.resx">
       <DependentUpon>UC_SalaryNotes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Weekly.resx">
-      <DependentUpon>UC_Weekly.cs</DependentUpon>
+    <EmbeddedResource Include="UC_Order.resx">
+      <DependentUpon>UC_Order.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -229,6 +238,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\healthy-groceries-bag-66eaef810acf6 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_30dp_E3E3E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_30dp_75FB4C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_30dp_EA3323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_30dp_DF9D9B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_30dp_EA3323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_30dp_000000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_50dp_75FB4C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1319625327-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1319625327-612x612-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

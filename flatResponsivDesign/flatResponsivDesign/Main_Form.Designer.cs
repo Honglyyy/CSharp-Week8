@@ -49,13 +49,18 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.employeeBtn = new System.Windows.Forms.Button();
             this.RightPanel = new System.Windows.Forms.Panel();
-            this.middlePanel = new System.Windows.Forms.Panel();
             this.uC_Monthly1 = new flatResponsivDesign.UC_Monthly();
-            this.uC_Weekly1 = new flatResponsivDesign.UC_Weekly();
             this.loadedForm1 = new flatResponsivDesign.loadedForm();
             this.uC_PartTime1 = new flatResponsivDesign.UC_SalaryNotes();
             this.uC_FullTime1 = new flatResponsivDesign.UC_FullTime();
             this.uC_Daily1 = new flatResponsivDesign.UC_Daily();
+            this.middlePanel = new System.Windows.Forms.Panel();
+            this.uC_SalaryNotes1 = new flatResponsivDesign.UC_SalaryNotes();
+            this.uC_Order1 = new flatResponsivDesign.UC_Order();
+            this.uC_Monthly2 = new flatResponsivDesign.UC_Monthly();
+            this.uC_FullTime2 = new flatResponsivDesign.UC_FullTime();
+            this.uC_Daily2 = new flatResponsivDesign.UC_Daily();
+            this.loadedForm2 = new flatResponsivDesign.loadedForm();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -300,7 +305,7 @@
             this.salaryNoteBtn.TabIndex = 0;
             this.salaryNoteBtn.Text = "Salary Note";
             this.salaryNoteBtn.UseVisualStyleBackColor = true;
-            this.salaryNoteBtn.Click += new System.EventHandler(this.partTimeBtn_Click);
+            this.salaryNoteBtn.Click += new System.EventHandler(this.salaryNoteBtn_Click);
             // 
             // panel6
             // 
@@ -336,21 +341,6 @@
             this.RightPanel.Size = new System.Drawing.Size(126, 470);
             this.RightPanel.TabIndex = 4;
             // 
-            // middlePanel
-            // 
-            this.middlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(50)))));
-            this.middlePanel.Controls.Add(this.uC_Monthly1);
-            this.middlePanel.Controls.Add(this.uC_Weekly1);
-            this.middlePanel.Controls.Add(this.loadedForm1);
-            this.middlePanel.Controls.Add(this.uC_PartTime1);
-            this.middlePanel.Controls.Add(this.uC_FullTime1);
-            this.middlePanel.Controls.Add(this.uC_Daily1);
-            this.middlePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middlePanel.Location = new System.Drawing.Point(0, 0);
-            this.middlePanel.Name = "middlePanel";
-            this.middlePanel.Size = new System.Drawing.Size(1073, 695);
-            this.middlePanel.TabIndex = 5;
-            // 
             // uC_Monthly1
             // 
             this.uC_Monthly1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -358,14 +348,6 @@
             this.uC_Monthly1.Name = "uC_Monthly1";
             this.uC_Monthly1.Size = new System.Drawing.Size(1073, 695);
             this.uC_Monthly1.TabIndex = 5;
-            // 
-            // uC_Weekly1
-            // 
-            this.uC_Weekly1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Weekly1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Weekly1.Name = "uC_Weekly1";
-            this.uC_Weekly1.Size = new System.Drawing.Size(1073, 695);
-            this.uC_Weekly1.TabIndex = 4;
             // 
             // loadedForm1
             // 
@@ -400,6 +382,69 @@
             this.uC_Daily1.Name = "uC_Daily1";
             this.uC_Daily1.Size = new System.Drawing.Size(1073, 695);
             this.uC_Daily1.TabIndex = 3;
+            // 
+            // middlePanel
+            // 
+            this.middlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(50)))));
+            this.middlePanel.Controls.Add(this.loadedForm2);
+            this.middlePanel.Controls.Add(this.uC_SalaryNotes1);
+            this.middlePanel.Controls.Add(this.uC_Order1);
+            this.middlePanel.Controls.Add(this.uC_Monthly2);
+            this.middlePanel.Controls.Add(this.uC_FullTime2);
+            this.middlePanel.Controls.Add(this.uC_Daily2);
+            this.middlePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.middlePanel.Location = new System.Drawing.Point(0, 0);
+            this.middlePanel.Name = "middlePanel";
+            this.middlePanel.Size = new System.Drawing.Size(1073, 695);
+            this.middlePanel.TabIndex = 5;
+            // 
+            // uC_SalaryNotes1
+            // 
+            this.uC_SalaryNotes1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_SalaryNotes1.Location = new System.Drawing.Point(0, 0);
+            this.uC_SalaryNotes1.Name = "uC_SalaryNotes1";
+            this.uC_SalaryNotes1.Size = new System.Drawing.Size(1073, 695);
+            this.uC_SalaryNotes1.TabIndex = 4;
+            // 
+            // uC_Order1
+            // 
+            this.uC_Order1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Order1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Order1.Name = "uC_Order1";
+            this.uC_Order1.Size = new System.Drawing.Size(1073, 695);
+            this.uC_Order1.TabIndex = 3;
+            // 
+            // uC_Monthly2
+            // 
+            this.uC_Monthly2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Monthly2.Location = new System.Drawing.Point(0, 0);
+            this.uC_Monthly2.Name = "uC_Monthly2";
+            this.uC_Monthly2.Size = new System.Drawing.Size(1073, 695);
+            this.uC_Monthly2.TabIndex = 2;
+            // 
+            // uC_FullTime2
+            // 
+            this.uC_FullTime2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_FullTime2.Location = new System.Drawing.Point(0, 0);
+            this.uC_FullTime2.Name = "uC_FullTime2";
+            this.uC_FullTime2.Size = new System.Drawing.Size(1073, 695);
+            this.uC_FullTime2.TabIndex = 1;
+            // 
+            // uC_Daily2
+            // 
+            this.uC_Daily2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Daily2.Location = new System.Drawing.Point(0, 0);
+            this.uC_Daily2.Name = "uC_Daily2";
+            this.uC_Daily2.Size = new System.Drawing.Size(1073, 695);
+            this.uC_Daily2.TabIndex = 0;
+            // 
+            // loadedForm2
+            // 
+            this.loadedForm2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.loadedForm2.Location = new System.Drawing.Point(0, 0);
+            this.loadedForm2.Name = "loadedForm2";
+            this.loadedForm2.Size = new System.Drawing.Size(1073, 695);
+            this.loadedForm2.TabIndex = 5;
             // 
             // Main_Form
             // 
@@ -439,7 +484,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel RightPanel;
-        private System.Windows.Forms.Panel middlePanel;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel pnlLeft2;
         private System.Windows.Forms.Panel panel8;
@@ -458,10 +502,16 @@
         private UC_FullTime uC_FullTime1;
         private loadedForm loadedForm1;
         private UC_Daily uC_Daily1;
-        private UC_Weekly uC_Weekly1;
         private UC_Monthly uC_Monthly1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button BtnLogOut;
         private System.Windows.Forms.Label LblWelcome;
+        private System.Windows.Forms.Panel middlePanel;
+        private UC_SalaryNotes uC_SalaryNotes1;
+        private UC_Order uC_Order1;
+        private UC_Monthly uC_Monthly2;
+        private UC_FullTime uC_FullTime2;
+        private UC_Daily uC_Daily2;
+        private loadedForm loadedForm2;
     }
 }

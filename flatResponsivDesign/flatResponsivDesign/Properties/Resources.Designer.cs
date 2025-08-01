@@ -73,6 +73,26 @@ namespace flatResponsivDesign.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_30dp_75FB4C {
+            get {
+                object obj = ResourceManager.GetObject("add_30dp_75FB4C", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_50dp_75FB4C {
+            get {
+                object obj = ResourceManager.GetObject("add_50dp_75FB4C", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap apple_splash_1242_2208_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("apple-splash-1242-2208-removebg-preview", resourceCulture);
@@ -96,6 +116,26 @@ namespace flatResponsivDesign.Properties {
         internal static System.Drawing.Bitmap backspace_50dp_EA3323_FILL0_wght400_GRAD0_opsz48 {
             get {
                 object obj = ResourceManager.GetObject("backspace_50dp_EA3323_FILL0_wght400_GRAD0_opsz48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap build_30dp_DF9D9B {
+            get {
+                object obj = ResourceManager.GetObject("build_30dp_DF9D9B", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_30dp_EA3323 {
+            get {
+                object obj = ResourceManager.GetObject("delete_30dp_EA3323", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +246,56 @@ namespace flatResponsivDesign.Properties {
         internal static System.Drawing.Bitmap icons8_log_in_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-log-in-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1319625327_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1319625327-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1319625327_612x612_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1319625327-612x612-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receipt_30dp_000000 {
+            get {
+                object obj = ResourceManager.GetObject("receipt_30dp_000000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_30dp_EA3323 {
+            get {
+                object obj = ResourceManager.GetObject("save_30dp_EA3323", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_30dp_E3E3E3 {
+            get {
+                object obj = ResourceManager.GetObject("search_30dp_E3E3E3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
