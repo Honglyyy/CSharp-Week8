@@ -21,6 +21,7 @@ namespace flatResponsivDesign
 
         private void Btn1DArr_Click(object sender, EventArgs e)
         {
+            listBox.Items.Clear();
             // Example of a one-dimensional array in C# manually initialized
             //int total = 0;
             //int[] num =new int[]{ 1, 2, 3, 4, 5, 6, 10, 11 };
@@ -48,7 +49,7 @@ namespace flatResponsivDesign
 
             //int total = 0;
 
-            for(int i = 0; i < num.Length; i++)
+            for (int i = 0; i < num.Length; i++)
             {
                 //num[i] = 5;
                 //num[i] = (i == 0) ? 5: i*10; //Tenary
@@ -67,6 +68,8 @@ namespace flatResponsivDesign
 
         private void Btn2DArr_Click(object sender, EventArgs e)
         {
+            listBox.Items.Clear();
+
             int total = 0;
             int[,] Arr2D = new int[3, 4]; // 3 rows, 4 columns
             int value = 1; // Start from 1

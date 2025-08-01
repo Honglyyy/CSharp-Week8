@@ -153,7 +153,7 @@
             this.BtnLogOut.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnLogOut.FlatAppearance.BorderSize = 0;
             this.BtnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogOut.Image = global::flatResponsivDesign.Properties.Resources.icons8_close_50;
             this.BtnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnLogOut.Location = new System.Drawing.Point(3, 3);

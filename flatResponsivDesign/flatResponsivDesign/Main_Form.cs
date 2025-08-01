@@ -21,7 +21,7 @@ namespace flatResponsivDesign
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
-            LblWelcome.Text += loginForm.username;
+            LblWelcome.Text += loginForm.publicUserName;
 
             loadedForm1.BringToFront();
             pnlLeft1.Height = 0;

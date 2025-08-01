@@ -103,6 +103,16 @@ namespace flatResponsivDesign.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap healthy_groceries_bag_66eaef810acf6__1_ {
+            get {
+                object obj = ResourceManager.GetObject("healthy-groceries-bag-66eaef810acf6 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bill_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-bill-48", resourceCulture);

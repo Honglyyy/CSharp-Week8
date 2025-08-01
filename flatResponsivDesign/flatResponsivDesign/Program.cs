@@ -16,7 +16,7 @@ namespace flatResponsivDesign
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ArrayForm());
+            Application.Run(new SplashForm());
         }
     }
 }

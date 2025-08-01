@@ -227,5 +227,8 @@
   <ItemGroup>
     <None Include="Resources\backspace_50dp_EA3323_FILL0_wght400_GRAD0_opsz48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthy-groceries-bag-66eaef810acf6 %281%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
