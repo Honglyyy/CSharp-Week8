@@ -126,7 +126,33 @@ namespace flatResponsivDesign
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
+            SqlCommand cmd;
+            SqlDataReader reader;
 
+            int ordId;
+
+
+            loginForm.connection.Open();
+            ordId = int.Parse(OrdNoTxt.Text);
+            string sqlStr = $@"SELECT * FROM ORDERS WHERE ORDID = {ordId};";
+            cmd = new SqlCommand(sqlStr, loginForm.connection);
+            try
+            {
+                reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data is deleted");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+            loginForm.connection.Close();
         }
     }
 }
