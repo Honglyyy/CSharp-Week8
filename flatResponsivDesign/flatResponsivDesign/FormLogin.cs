@@ -12,7 +12,7 @@ namespace flatResponsivDesign
 {
     public partial class loginForm : Form
     {
-        SqlConnection connection;
+        public static SqlConnection connection;
         public static string publicUserName;
         public static string username , roles;
         public loginForm()
